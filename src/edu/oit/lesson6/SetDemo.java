@@ -9,11 +9,11 @@ public class SetDemo {
 	public static void main(String[] args) {
 		HashSet<String> set = new HashSet<>();
 		HashSet<Animal> animals = new HashSet<>();
-		ArrayList list1;
+		ArrayList list1=null;
 		set.add("Panda");
 		set.add("Panda");
 		set.add("Monkey");
-		set.addAll(1);
+		set.addAll(list1);
 		
 		
 		

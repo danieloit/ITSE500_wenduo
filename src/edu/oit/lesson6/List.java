@@ -18,7 +18,7 @@ public class List {
 		ArrayList<Integer> list1 = new ArrayList<Integer>(Arrays.asList(8, 9, 10));
         ArrayList<Integer> list2 = new ArrayList<Integer>(Arrays.asList(6, 5, 4, 3, 2, 1));
         System.out.println("The new list is ");
-        for (int i=0; i<list1.size() +list2.size(); i++){
+        for (int i=0; i<alternate(list1,list2).size(); i++){
         System.out.print( alternate(list1,list2).get(i)+", ");
 		}
         
@@ -58,7 +58,7 @@ public class List {
 		public static ArrayList<Integer> alternate( ArrayList<Integer> list1, ArrayList<Integer> list2 ){
 			ArrayList<Integer> combinedList = new ArrayList<Integer>();
 			ArrayList<Integer> sortedList = new ArrayList<Integer>();
-			if (list1.size() < list2.size()){
+			/*if (list1.size() < list2.size()){
 				combinedList.addAll(list1);
 				combinedList.addAll(list2);
 				sortedList = combinedList;
@@ -78,10 +78,25 @@ public class List {
 				}
 				
 			}
+			*/
+			ArrayList<Integer> newlist = new ArrayList<Integer>();
+			for (int index=0; index<list1.size()+list2.size(); index++ ){
 			
-
-			return sortedList;
+			if(index<list1.size()){
+			newlist.add(list1.get(index));
+			}
+			
+			if(index<list2.size()){
+				newlist.add(list2.get(index));
+				}
+			
+			
+			}
+						
+			return newlist;
 		}
+		
+		
 		
 		
 		public static int leastCommon(HashMap<String, Integer> args) {
