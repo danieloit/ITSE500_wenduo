@@ -56,9 +56,9 @@ public class List {
 		
 		
 		public static ArrayList<Integer> alternate( ArrayList<Integer> list1, ArrayList<Integer> list2 ){
-			ArrayList<Integer> combinedList = new ArrayList<Integer>();
+			/* ArrayList<Integer> combinedList = new ArrayList<Integer>();
 			ArrayList<Integer> sortedList = new ArrayList<Integer>();
-			/*if (list1.size() < list2.size()){
+			if (list1.size() < list2.size()){
 				combinedList.addAll(list1);
 				combinedList.addAll(list2);
 				sortedList = combinedList;
