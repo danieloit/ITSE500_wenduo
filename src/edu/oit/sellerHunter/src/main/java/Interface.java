@@ -89,6 +89,7 @@ public class Interface extends JFrame{
                     totalRating = rating;
 
                 SellerHunter sh = new SellerHunter(country, positiveRating, totalRating);
+
                 sh.openPages();
 
             }

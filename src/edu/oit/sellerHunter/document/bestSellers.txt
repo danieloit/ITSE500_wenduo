@@ -1,4 +1,23 @@
 Best Sellers for the following products: 
 
-Product ID: 1569220069
-BL Dealers: $686.77
+Product ID: 1569220069, Country Name : UK, BestSeller Name : Nearfine: , Product Price : £25.54, Total Price : 28.34
+Product ID: 0670885517, Country Name : UK, BestSeller Name : Atlanta Book Company USA: , Product Price : £29.75, Total Price : 32.55
+Product ID: 0691007780, Country Name : UK, BestSeller Name : Sierra Nevada Books USA: , Product Price : £64.4, Total Price : 67.2
+Product ID: 0517144352, Country Name : UK, BestSeller Name : betterworldbooks: , Product Price : £59.28, Total Price : 62.08
+Product ID: 0198221681, Country Name : UK, BestSeller Name : owlsmart_usa: , Product Price : £67.42, Total Price : 70.22
+Product ID: 0062700782, Country Name : UK, BestSeller Name : World of Books Ltd: , Product Price : £3.71, Total Price : 6.51
+Product ID: 0140095276, Country Name : UK, BestSeller Name : owlsmart_usa: , Product Price : £106.99, Total Price : 109.78999999999999
+Product ID: 0521376793, Country Name : UK, BestSeller Name : Greener_Books: , Product Price : £120.0, Total Price : 122.8
+Product ID: 0674179250, Country Name : UK, BestSeller Name : Your Online Bookstore: , Product Price : £146.99, Total Price : 149.79000000000002
+Product ID: 0345431057, Country Name : UK, BestSeller Name : WonderBook-USA: , Product Price : £10.75, Total Price : 13.55
+Product ID: 0071445439, Country Name : UK, BestSeller Name : owlsmart_usa: , Product Price : £75.0, Total Price : 77.8
+Product ID: 0738531065, Country Name : UK, BestSeller Name : Books2anywhereUS: , Product Price : £87.85, Total Price : 90.64999999999999
+Product ID: 0634056875, Country Name : UK, BestSeller Name : Books2anywhereUS: , Product Price : £35.67, Total Price : 38.47
+Product ID: 1585423130, Country Name : UK, BestSeller Name : London Bridge Books: , Product Price : £121.99, Total Price : 124.78999999999999
+Product ID: 0486229572, Country Name : UK, BestSeller Name : owlsmart_usa: , Product Price : £49.95, Total Price : 52.75
+Product ID: 0486299236, Country Name : UK, BestSeller Name : World of Books Ltd: , Product Price : £28.78, Total Price : 31.580000000000002
+Product ID: 0486291227, Country Name : UK, BestSeller Name : MLND selling: , Product Price : £189.99, Total Price : 192.79000000000002
+Product ID: 0253209358, Country Name : UK, BestSeller Name : betterworldbooksltd: , Product Price : £72.0, Total Price : 74.8
+Product ID: 048627621X, Country Name : UK, BestSeller Name : Nearfine: , Product Price : £91.99, Total Price : 94.78999999999999
+Product ID: 006018471X, Country Name : UK, BestSeller Name : Clean Earth Books: , Product Price : £36.52, Total Price : 39.32
+Product ID: 1616770287, Country Name : UK, BestSeller Name : Bubble blitz and Candlesticks: , Product Price : £87.85, Total Price : 90.64999999999999

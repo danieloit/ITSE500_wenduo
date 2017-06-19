@@ -16,6 +16,7 @@ public class SellerHunter {
     private static final String URLROOT2 = "/gp/offer-listing/";
     private static final String PRODUCTPATH = "document/products.txt";
     private static final String BESTSELLERPATH = "document/bestSellers.txt";
+    public static String countryName = "";
 
     public static int getPositiveRating() {
         return positiveRating;
@@ -45,6 +46,7 @@ public class SellerHunter {
 
 
     public SellerHunter(String str, int pos, int rating) {
+        countryName = str;
         positiveRating = pos;
         totalRating = rating;
         if (str.equals("US"))
@@ -77,6 +79,7 @@ public class SellerHunter {
             BufferedReader bf = new BufferedReader(fr);
 
             String productId;
+            String mark="";
             double productPrice = 0;
             double shippingPrice = 0;
             double totalPrice= 0;
@@ -114,18 +117,25 @@ public class SellerHunter {
 
                         // get price
                         String priceString = seller.findElement(By.className("olpOfferPrice")).getText();
+                        String productPricestring= priceString.substring(1, priceString.length());
+                        if(productPricestring.contains(",")){
+                            productPricestring=productPricestring.replace(",","");
+                        }
+                         mark=priceString.substring(0,1);
+                        productPrice=Double.parseDouble(productPricestring);
+                        //int dollarIndex = priceString.indexOf(dollarSign);
 
-                        int dollarIndex = priceString.indexOf(dollarSign);
-
-                        productPrice = Double.parseDouble(priceString.substring(dollarIndex + 1).trim().replaceAll(",", ""));
+                        //productPrice = Double.parseDouble(priceString.substring(dollarIndex + 1).trim().replaceAll(",", ""));
 
                         // prime seller?
                         if (seller.findElements(By.cssSelector(".olpPriceColumn .supersaver")).size() > 0 && productPrice < 35) {
                             shippingPrice = 4.98;
                         } else if (seller.findElements(By.className("olpShippingPrice")).size() > 0) {
                             String priceString2 = seller.findElement(By.className("olpShippingPrice")).getText();
-                            int dollarIndex2 = priceString2.indexOf(dollarSign);
-                            shippingPrice = Double.parseDouble(priceString2.substring(dollarIndex2 + 1).trim().replaceAll(",", ""));
+                        //    int dollarIndex2 = priceString2.indexOf(dollarSign);
+                        //    shippingPrice = Double.parseDouble(priceString2.substring(dollarIndex2 + 1).trim().replaceAll(",", ""));
+                            String productPricestring2 = priceString2.substring(1, priceString2.length());
+                            shippingPrice = Double.parseDouble(productPricestring2);
                         }
                         totalPrice = productPrice + shippingPrice;
 
@@ -165,13 +175,12 @@ public class SellerHunter {
                     }
                 }
 
-                data = "\nProduct ID: " + productId + "\n" + countryFix+ "\n" + bestSellerName + ": " + dollarSign + totalPrice;
+                data = "\nProduct ID: " + productId + ", Country Name : " + countryName + ", BestSeller Name : " + bestSellerName + ": " + ", Product Price : " + mark + productPrice + ", Total Price : " + totalPrice;
                 wf.setData(data);
                 wf.write(true);
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             driver.close();
